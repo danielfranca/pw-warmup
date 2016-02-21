@@ -10,7 +10,8 @@ class GameMain(object):
 
     def run(self):
         pygame.init()
-        DISPLAYSURF = pygame.display.set_mode((800, 600))
+        DISPLAYSURF = pygame.display.set_mode((800, 600)).convert()
+        pygame.display.set_caption(self.caption)
         
         while(True):
             for event in pygame.event.get():
