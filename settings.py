@@ -20,3 +20,5 @@ SPEED = {
 NUMBER_ENEMIES = {
     'medium': 8
 }
+
+FPS = 30

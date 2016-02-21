@@ -3,5 +3,11 @@
 import pygame
 
 class Sprite(object):
+
+    x = 0
+    y = 0
+    obj = None
     
-    pass
+    def __init__(self, filename):
+        self.obj = pygame.image.load(filename)
+
