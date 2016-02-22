@@ -23,3 +23,5 @@ class Spaceship(Sprite):
         self.position['x'] = x
         self.position['y'] = y
         super(Spaceship, self).__init__('sprites/spaceship.png')
+        transColor = self.obj.get_at((0,0))
+        self.obj.set_colorkey(transColor)
