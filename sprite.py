@@ -9,5 +9,5 @@ class Sprite(object):
     obj = None
     
     def __init__(self, filename):
-        self.obj = pygame.image.load(filename)
+        self.obj = pygame.image.load(filename).convert()
 

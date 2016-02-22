@@ -17,17 +17,21 @@ class GameMain(object):
 
         self.fpsClock = pygame.time.Clock()
 
-        self.DISPLAYSURF = pygame.display.set_mode((800, 600)).convert()
+        #import ipdb; ipdb.set_trace()
+        self.DISPLAYSURF = pygame.display.set_mode((800, 600))
         pygame.display.set_caption(self.caption)
+        WHITE = (255, 255, 255)
 
         self.init()
         
         while(True):
-            self.mainLoop()
             for event in pygame.event.get():
                 if event.type == QUIT:
                     pygame.quit()
                     sys.exit()
             
-            pygame.display.update()
+            self.DISPLAYSURF.fill(WHITE)
+            self.mainLoop()
+
+            pygame.display.flip()
             self.fpsClock.tick(FPS)

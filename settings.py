@@ -22,3 +22,5 @@ NUMBER_ENEMIES = {
 }
 
 FPS = 30
+
+SPEED = 5
