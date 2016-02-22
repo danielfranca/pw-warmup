@@ -18,7 +18,7 @@ class GameMain(object):
         self.fpsClock = pygame.time.Clock()
 
         #import ipdb; ipdb.set_trace()
-        self.DISPLAYSURF = pygame.display.set_mode((800, 600))
+        self.DISPLAYSURF = pygame.display.set_mode((1000, 600))
         pygame.display.set_caption(self.caption)
         WHITE = (255, 255, 255)
 
