@@ -20,7 +20,6 @@ class GameMain(object):
         #import ipdb; ipdb.set_trace()
         self.DISPLAYSURF = pygame.display.set_mode((1000, 600))
         pygame.display.set_caption(self.caption)
-        WHITE = (255, 255, 255)
 
         self.init()
         
@@ -30,7 +29,6 @@ class GameMain(object):
                     pygame.quit()
                     sys.exit()
             
-            self.DISPLAYSURF.fill(WHITE)
             self.mainLoop()
 
             pygame.display.flip()
