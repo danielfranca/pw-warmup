@@ -17,7 +17,7 @@ SPEED = {
     'medium': 3
 }
 
-NUMBER_ENEMIES = {
+NUMBER_ASTEROIDS = {
     'medium': 8
 }
 
