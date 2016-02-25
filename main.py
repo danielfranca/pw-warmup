@@ -7,8 +7,8 @@
 #Show score
 #Check screen limits
 #Clear arrays with bullets/asteroids
-#Make explosion when hit asteroid
-#Make explosion when asteroid hits you
+#del asteroid when hit asteroid
+#del you when asteroid hits you
 #Decrement life when asteroid hits you
 #Increment score when you hit asteroid
 

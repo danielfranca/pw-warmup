@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-#
-from sprite import Sprite
+from sprite import MySprite
 from pygame.transform import scale, rotate
 from settings import LEVEL, MAX_LIFE
 
-class Spaceship(Sprite):
+class Spaceship(MySprite):
     
     score = 0
     life = MAX_LIFE[LEVEL]
@@ -13,7 +13,7 @@ class Spaceship(Sprite):
         self.x = x
         self.y = y
         super(Spaceship, self).__init__('sprites/spaceship.png')
-        transColor = self.obj.get_at((0,0))
-        self.obj.set_colorkey(transColor)
-        self.obj = scale(self.obj, (60, 70))
-        self.obj = rotate(self.obj, 270)
+        transColor = self.image.get_at((0,0))
+        self.image.set_colorkey(transColor)
+        self.image = scale(self.image, (60, 70))
+        self.image = rotate(self.image, 270)

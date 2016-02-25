@@ -1,22 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-#
 import pygame
+from pygame.sprite import Sprite
 
-class Sprite(object):
+class MySprite(Sprite):
 
-    x = 0
-    y = 0
-    obj = None
+    image = None
 
     def __init__(self, filename):
-        self.obj = pygame.image.load(filename).convert()
+        self.image = pygame.image.load(filename).convert_alpha()
+        self.rect = self.image.get_rect()
 
     def move(self, side, speed):
         if side == 'left':
-            self.x -= speed
+            self.rect.x -= speed
         elif side == 'right':
-            self.x += speed
+            self.rect.x += speed
         elif side == 'up':
-            self.y -= speed
+            self.rect.y -= speed
         elif side == 'down':
-            self.y += speed
+            self.rect.y += speed
